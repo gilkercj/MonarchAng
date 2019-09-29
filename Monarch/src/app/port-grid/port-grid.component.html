@@ -1,0 +1,13 @@
+
+
+<p>portgrid test</p>
+
+<mat-grid-list class="portfolio" cols="3"  rowHeight="200px">
+    <mat-grid-tile 
+        class="portfolio-item"
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows">
+      <a href={{tile.pic}}><img src={{tile.pic}}/></a>
+    </mat-grid-tile>
+  </mat-grid-list>
